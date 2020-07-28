@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>JavaScript MineSweeper</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body>
+		<button id="theme">Change Theme</button>
+		<div class="main">
+			<table id="landmine"></table>
+			<div id="operation">
+				<div class="tip">
+					<img id="mineImage"  src='./images/mine.png' alt="landmine">：<span class="light red" id="landMineCount">0</span>
+				</div>
+				<div class="tip">
+					<img src='./images/time-icon.png' alt="time cost">：<span class="light f60" id="costTime">0</span> s
+				</div>
+				<fieldset>
+					<legend>Levels：</legend>
+					<input
+						type="radio"
+						name="level"
+						id="llevel"
+						checked="checked"
+						value="10"
+					/><label for="llevel">Easy（10*10）</label><br />
+					<input
+						type="radio"
+						name="level"
+						id="mlevel"
+						value="15"
+					/><label for="mlevel">Normal（15*15）</label><br />
+					<input
+						type="radio"
+						name="level"
+						id="hlevel"
+						value="20"
+					/><label for="hlevel">Hard（20*20）</label><br />
+				</fieldset>
+				<button id="newGame">New<br/>Game</button>
+			</div>
+		</div>
+		<div class="overlay">
+			<div class="popup">
+				<div class="close">&times;</div>
+				<div class="content">
+					Congratulations!<br />
+					You made it!
+				</div>
+			</div>
+		</div>
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
