@@ -13,7 +13,7 @@ body {
 	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
-	background-image: url('./images/lego-yellow.jpg');
+	background-image: url("./images/lego-yellow.jpg");
 	padding: 20px;
 	border-radius: 5px;
 	display: inline-block;
@@ -22,7 +22,7 @@ body {
 	cursor: pointer;
 }
 #theme:hover {
-	background-image: url('./images/lego-green.jpg');
+	background-image: url("./images/lego-green.jpg");
 	color: white;
 	letter-spacing: 1px;
 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -31,7 +31,7 @@ body {
 	transition: all 0.4s ease 0s;
 }
 
-.main {
+#main {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -41,11 +41,11 @@ body {
 	width: 600px;
 	zoom: 1;
 }
-.main table {
+#main table {
 	background: #ccc;
 	float: right;
 }
-.main table td {
+#main table td {
 	border: 2px outset #eee;
 	font-size: 18px;
 	width: 22px;
@@ -53,17 +53,17 @@ body {
 	text-align: center;
 	cursor: pointer;
 }
-.main table td.new:hover {
+#main table td.new:hover {
 	background-color: #aaa;
 }
-.main #operation {
+#main #operation {
 	width: 180px;
 	float: left;
 	text-align: center;
 }
 
 .landMine {
-	background-image: url('./images/mine.png');
+	background-image: url("./images/mine.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -73,17 +73,17 @@ body {
 	background-color: red;
 }
 
-.main table td.normal {
+#main table td.normal {
 	border: 2px solid #eee;
 	background-color: #aaa;
 }
 
-.main table td.normal:hover {
+#main table td.normal:hover {
 	background-color: #aaa;
 }
 
 .flag {
-	background-image: url('./images/flag.png');
+	background-image: url("./images/flag.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -93,7 +93,7 @@ body {
 	background-color: yellow;
 }
 
-.main:after {
+#main:after {
 	clear: both;
 	display: block;
 	content: "";
@@ -101,27 +101,27 @@ body {
 	height: 0;
 	visibility: hidden;
 }
-.main .tip {
+#main .tip {
 	font-size: 14px;
 	margin: 5px;
 }
 
-.main .tip img {
+#main .tip img {
 	width: 24px;
 	height: 24px;
 	transform: translateY(5px);
 }
 
-.main .light {
+#main .light {
 	font-size: 24px;
 }
-.main .red {
+#main .red {
 	color: red;
 }
-.main .f60 {
+#main .f60 {
 	color: #f60;
 }
-.main #newGame {
+#main #newGame {
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 5px 20px;
@@ -132,23 +132,23 @@ body {
 	border: 2px outset #eee;
 	background-color: #ccc;
 }
-.main #newGame:hover {
+#main #newGame:hover {
 	background-color: #999;
 	background-blend-mode: lighten;
 }
 
-.main input,
-.main fieldset label {
+#main input,
+#main fieldset label {
 	cursor: pointer;
 }
 
-.main fieldset {
+#main fieldset {
 	margin: 10px 0;
 	line-height: 25px;
 	font-weight: 600;
 }
 
-.overlay {
+#overlay {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -165,14 +165,14 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 20px;
-	background-image: url('./images/celebration.gif');
+	background-image: url("./images/celebration.gif");
 	background-size: cover;
 	border-radius: 5px;
 	width: 800px;
 	height: 500px;
 }
 
-.popup .close {
+.popup #close {
 	position: absolute;
 	z-index: 1;
 	top: 10px;
@@ -182,7 +182,7 @@ body {
 	font-weight: 600;
 	color: white;
 }
-.popup .close:hover {
+.popup #close:hover {
 	color: red;
 	cursor: pointer;
 }
@@ -217,26 +217,26 @@ body {
 
 /* lego theme */
 .body-lego {
-	background-image: url('./images/lego-background-large.jpg');
+	background-image: url("./images/lego-background-large.jpg");
 	background-size: cover;
 }
 .main-lego {
-	background: url('./images/lego-green.jpg');
+	background: url("./images/lego-green.jpg");
 	background-color: rgba(255, 255, 255, 0.2);
 	background-blend-mode: soft-light;
 }
 .landMine-lego {
-	background-image: url('./images/lego-skeleton.png');
+	background-image: url("./images/lego-skeleton.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .flag-lego {
-	background-image: url('./images/lego-head-laugh.png');
+	background-image: url("./images/lego-head-laugh.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .button-lego {
-	background: url('./images/lego-yellow.jpg');
+	background: url("./images/lego-yellow.jpg");
 }

@@ -48,7 +48,7 @@ function initGame() {
 	setFieldTable(game.count);
 	game.cells = document.querySelectorAll("td");
 	bindCellClick();
-	document.getElementsByClassName("main")[0].style.width = `${
+	document.getElementById("main").style.width = `${
 		game.count * 32 + 180 + 60
 	}px`;
 
@@ -131,8 +131,8 @@ function shuffle(array) {
 }
 
 function handleEndGame() {
-	const overlayElement = document.getElementsByClassName("overlay")[0];
-	const closeElement = document.getElementsByClassName("close")[0];
+	const overlayElement = document.getElementById("overlay");
+	const closeElement = document.getElementById("close");
 	stopTimer();
 	showAll();
 	overlayElement.style.display = "block";
@@ -295,9 +295,7 @@ function handleThemeChange() {
 		case "original":
 			game.theme = "lego";
 			document.querySelector("body").classList.add("body-lego");
-			document
-				.getElementsByClassName("main")[0]
-				.classList.add("main-lego");
+			document.getElementById("main").classList.add("main-lego");
 			document.getElementById("newGame").classList.add("button-lego");
 			document.getElementById("landMineCount").classList.remove("red");
 			document.getElementById("costTime").classList.remove("f60");
@@ -307,9 +305,7 @@ function handleThemeChange() {
 		case "lego":
 			game.theme = "original";
 			document.querySelector("body").classList.remove("body-lego");
-			document
-				.getElementsByClassName("main")[0]
-				.classList.remove("main-lego");
+			document.getElementById("main").classList.remove("main-lego");
 			document.getElementById("newGame").classList.remove("button-lego");
 			document.getElementById("landMineCount").classList.add("red");
 			document.getElementById("costTime").classList.add("f60");
